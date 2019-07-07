@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I like Trains</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="jumbotron main-nav">
+        <div class="logo">
+            <H1>Trains, Trains, Trains</H1>
+        </div>
+    </nav>
+
+    <div class="jumbotron info">
+        <div class="navbar">
+            <h3>Train Arrival</h3>
+        </div>
+        <table id="table-data">
+            <tr>
+                <td>Departure</td>
+                <td>Train</td>
+                <td>Frequency</td>
+                <td>Location</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="jumbotron form-data">
+        <div class="navbar">
+            <h3>Add Train</h3>
+        </div>
+
+        <ul>
+            <li>
+                <label for="train Name">Train Name</label>
+                <input id="train" name="train Name" type="text" placeholder="Thomas the Train">
+            </li>
+            <li>
+                <label for="location">Location</label>
+                <input id="location" name="location" type="text" placeholder="Anywhere but here">
+            </li>
+            <li>
+                <label for="Initial-Train">Initial Train Time (Military time)</label>
+                <input id="init-train" name="Initial-Train" type="text" placeholder="HH:MM">
+            </li>
+            <li>
+                <label for="frequency">Frequency of Train Arrival(mins)</label>
+                <input id="frequency" name="frequency" type="text" placeholder="12345">
+            </li>
+        </ul>
+        <input id="add-train" type="submit" value="Submit" onclick="addNew()">
+
+
+    </div>
+
+</body>
+
+
+<script src="assets/js/script.js"></script>
+
+</html>

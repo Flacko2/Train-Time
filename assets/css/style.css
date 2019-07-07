@@ -1,0 +1,50 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+ body {
+     background-color: rgb(22, 155, 155);
+ }
+
+ .nav-bar {
+     text-align: center;
+     height: 150px;
+     border: 2px block rgb(116, 115, 115);
+     background-color: rgb(212, 211, 211);
+ }
+
+ .info {
+     margin: 20px 10%;
+     padding: 0;
+ }
+
+ .info, .form-data, .main-nav {
+     border: 3px double #737373;
+     margin: 20px 5%;
+ }
+
+ .main-nav {
+     width: 90%;
+     margin-top: 0;
+     border-top: none;
+     border-radius: 0 0 4px 4px;
+     display: inline-block;
+     text-align: center;
+ }
+
+ .main-nav {
+     font-size: 32px;
+     letter-spacing: 2px;
+ }
+
+ .info table {
+     width: 100%;
+ }
+
+ td {
+     text-align: center;
+ }
+
